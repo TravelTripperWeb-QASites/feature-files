@@ -1,0 +1,8 @@
+---
+- a/b/:
+    to: ''
+    code: '302'
+- events/[^\?]*(\?.+)?:
+    to: "$1"
+    code: '301'
+    type: regex
